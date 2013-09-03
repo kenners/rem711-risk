@@ -11,6 +11,11 @@
 
 \usepackage[pdfauthor={Kenrick Turner}, pdftitle={A pre-deployment medical plan for Rothera Research Station, Antarctica}, pdfsubject={Antarctic medical risk assessment},pdfkeywords={antarctica, risk assessment, medical}]{hyperref}
 
+% Need this to rotate table in appendix
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{booktabs}
+
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text]{Helvetica Neue}
@@ -82,5 +87,163 @@ As the largest British station on the continent, the summer population can excee
 
 \bibliographystyle{naturemag}
 \bibliography{risk-assessment}
+
+\begin{landscape}
+    \appendix
+    \section{Risk Assessment for Rothera Research Station}
+    \begin{longtable}{lllll}
+        \toprule
+        \textbf{Activity} & \textbf{Hazard} & \textbf{Harm} & \textbf{Risk} & \textbf{Control Measures} \\
+        \midrule
+        \endhead
+        Antarctic environment & Isolation & Depression/anxiety & Low & Prescreening \\
+         &  &  &  & Encourage shared group activities \\
+         &  &  &  & Regular communication with friends/family \\
+         &  &  &  & Education and awareness \\
+         & Confined environment & Interpersonal conflict & Moderate & Prescreening \\
+         &  &  &  & Encourage shared group activities \\
+         & Alcohol & Injury whilst intoxicated & Moderate & Education \\
+         &  &  &  & Two can rule \\
+         &  & Dependency/withdrawal & Low & Education \\
+         &  &  &  & Prescreening \\
+         &  &  &  & Encourage other recreational activities \\
+         &  &  &  & Two can rule \\
+         & Darkness & Seasonal affective disorder & Moderate & Prescreening \\
+         &  &  &  & Encourage strict sleep hygeine \\
+         &  &  &  & Light boxes \\
+         &  &  &  & Vitamin D supplementation \\
+        \midrule
+        Field work & Cold & Hypothermia & Low & Education \\
+         &  &  &  & Appropriate clothing \\
+         &  &  &  & Adequate nutrition \\
+         &  &  &  & Rewarming bath available on station \\
+         &  & Frostbite/Frostnip & Moderate & Prescreening \\
+         &  &  &  & Education \\
+         &  &  &  & Appropriate clothing \\
+         &  &  &  & Adequate hydration \\
+         &  &  &  & Rewarming bath available on station \\
+         &  & Non-freezing cold injury & Low & Education \\
+         &  &  &  & Appropriate clothing \\
+         &  &  &  & Adequate hydration \\
+         &  & Dental sensitivity & Moderate & Prescreening \\
+         &  &  &  & Provide high fluoride toothpaste \\
+         &  &  &  & Duraphat varnish \\
+         &  & Cracked tooth & Low & Prescreening \\
+         &  &  &  & Education \\
+         &  &  &  & Dental training for MO \\
+         & Sun & Photokeratitis & Moderate & Education \\
+         &  &  &  & Provision of Cat 4 wraparound sunglasses/goggles \\
+         &  & Sunburn & Moderate & Education \\
+         &  &  &  & Limit exposed skin \\
+         &  &  &  & Provision of sunblock \\
+         & Fire & Burns & Low & Education \\
+         &  &  &  & Predeployment campcraft training \\
+         & Cooking in tents & CO poisoning & Moderate & Education \\
+         &  &  &  & Predeployment campcraft training \\
+         &  &  &  & CO detectors in tents \\
+         &  &  &  & Supplemental oxygen at bases \\
+         & Low humidity & Dehydration & Moderate & Education \\
+         &  &  &  & Encourage regular fluid intake \\
+         & Contaminated water & Poisoning/dehydration & Low & Predeployment campcraft training \\
+         &  &  &  & Use of Field Assistants \\
+        \midrule
+        Lab work & Hazardous chemicals & Exposure to harmful chemicals & Low & COSHH assessments to be completed \\
+         &  &  &  & Use of appropriate PPE \\
+         &  &  &  & BAS Lab induction training \\
+         & Exposed flames & Burns & Moderate & BAS Lab induction training \\
+         &  &  &  & Limit lone working where possible \\
+         & Pressure vessels & Burns/scalds & Low & BAS Lab induction training \\
+         &  &  &  & Limit lone working where possible \\
+        \midrule
+        Overland travel & Collision & Trauma & Low & Predeployment training \\
+         &  &  &  & MAJAX plan and exercises \\
+         & Getting lost & Various,  inc. trauma and cold injury & Moderate & Predeployment training \\
+         &  &  &  & Use of Field Assistants \\
+         &  &  &  & Provision of reserve fuel and emergency supplies \\
+         & Avalanche & Major trauma/asphyxiation & Moderate & Travel routes to be approved by BAS Ops \\
+         &  &  &  & Use of Field Assistants \\
+         &  &  &  & Predeployment training \\
+         &  &  &  & Meterology advice \\
+         &  &  &  & MAJAX plan and exercises \\
+         & Crevasse fall & Major trauma, cold injury & Moderate & Travel routes to be approved by BAS Ops \\
+         &  &  &  & Use of Field Assistants \\
+         &  &  &  & Predeployment training \\
+         &  &  &  & MAJAX plan and exercises \\
+        \midrule
+        Aircraft travel & Noise & Hearing damage & Moderate & Use of appropriate PPE \\
+         &  &  &  & Limit access to apron and runway during air ops \\
+         & Altitude & Altitude illness (AMS, HACE, HAPE) & Low & Use minimum altitude circumstances permit \\
+         &  &  &  & Prescreening \\
+         &  &  &  & Prophylactic acetazolamide for susceptible individuals \\
+         &  &  &  & Stagger direct flights to plateau \\
+         & Propellers & Major trauma & Low & Limit access to apron and runway during air ops \\
+         &  &  &  & Education \\
+         &  &  &  & MAJAX plan and exercises \\
+         & Crash & Major trauma & Low & Limit access to apron and runway during air ops \\
+         &  &  &  & MAJAX plan and exercises \\
+         & Manual handling & Crush, back, and hand injuries & Moderate & Predeployment training \\
+         &  &  &  & Adequate manpower for task \\
+         &  &  &  & Use of appropriate PPE \\
+        \midrule
+        Boat work & Capsize/Man overboard & Drowning & Low & Predeployment training \\
+         &  &  &  & Regular MOB drills \\
+         &  &  &  & MAJAX plan and exercises \\
+         &  &  &  & Use of appropriate PPE \\
+         &  & Hypothermia & Low & Use of appropriate PPE \\
+         &  &  &  & Regular MOB drills \\
+         &  &  &  & Predeployment training \\
+         & Manual handling & Crush,  back, and hand injuries & Moderate & Predeployment training \\
+         &  &  &  & Adequate manpower for task \\
+         &  &  &  & Use of appropriate PPE \\
+         & Engine failure/run aground & Various, inc hypothermia & Low & Boating ops to be approved by Boating officer \\
+         &  &  &  & Appropriate clothing \\
+         &  &  &  & Use of appropriate PPE \\
+         &  &  &  & Reserve boat to be kept ready on station \\
+        \midrule
+        Diving & Cold water & Drowning & Low & Diving restricted to approved divers \\
+         &  &  &  & Use of appropriate PPE \\
+         &  &  &  & All diving to be approved by Diving officer \\
+         &  &  &  & Absolute depth limit of 30m \\
+         &  &  &  & No decompression diving \\
+         &  &  &  & No solo diving \\
+         &  & Hypothermia & Moderate & Use of appropriate PPE \\
+         &  &  &  & No solo diving \\
+         &  &  &  & Rewarming bath available on station \\
+         &  & Decompression illness & Low & Diving restricted to approved divers \\
+         &  &  &  & No nitrox or heliox dives \\
+         &  &  &  & All diving to be approved by Diving officer \\
+         &  &  &  & Absolute depth limit of 30m \\
+         &  &  &  & No decompression diving \\
+         &  &  &  & No solo diving \\
+         &  &  &  & Decompression chamber on station \\
+         &  & Ear infection & High & Education \\
+         &  &  &  & Prompt treatment \\
+         &  & Barotrauma & Moderate & Diving restricted to approved divers \\
+         &  &  &  & Use of lines for descent and ascent \\
+         &  &  &  & No solo diving \\
+         & Fauna & Animal attack & Moderate & Diving restricted to approved divers \\
+         &  &  &  & No solo diving \\
+         &  &  &  & All diving to be approved by Diving officer \\
+         &  &  &  & Lookouts to be posted for seals/orcas \\
+         &  &  &  & No diving within 4hrs of sighting of seal/orca \\
+         &  &  &  & Immediate termination of dive if seal/orca spotted \\
+         &  &  &  & No decompression diving \\
+        \midrule
+        Outdoor recreation & Getting lost & Various,  inc trauma and cold injury & Moderate & Recreation restricted to approved areas \\
+         &  &  &  & Predeployment training \\
+         &  &  &  & Use of Field Assistants \\
+         & Avalanche & Major trauma/asphyxiation & Moderate & Recreation restricted to approved areas \\
+         &  &  &  & Use of Field Assistants \\
+         &  &  &  & Predeployment training \\
+         &  &  &  & Meterology advice \\
+         &  &  &  & MAJAX plan and exercises \\
+         & Crevasse fall & Major trauma, cold injury & Moderate & Recreation restricted to approved areas \\
+         &  &  &  & Use of Field Assistants \\
+         &  &  &  & Predeployment training \\
+         &  &  &  & MAJAX plan and exercises \\
+        \bottomrule
+    \end{longtable}
+
+\end{landscape}
 
 \end{document}
