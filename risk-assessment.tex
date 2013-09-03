@@ -13,6 +13,7 @@
 
 % Need this to rotate table in appendix
 \usepackage{pdflscape}
+\usepackage{tabu}
 \usepackage{longtable}
 \usepackage{booktabs}
 
@@ -91,20 +92,20 @@ As the largest British station on the continent, the summer population can excee
 \begin{landscape}
     \appendix
     \section{Risk Assessment for Rothera Research Station}
-    \begin{longtable}{lllll}
+    \begin{longtabu} to\linewidth{X[l]X[l]X[l]X[l]X[2,l]}
         \toprule
-        \textbf{Activity} & \textbf{Hazard} & \textbf{Harm} & \textbf{Risk} & \textbf{Control Measures} \\
+        \rowfont\bfseries Activity & Hazard & Harm & Risk & Control Measures \\
         \midrule
         \endhead
-        Antarctic environment & Isolation & Depression/anxiety & Low & Prescreening \\
+        Antarctic environment & Isolation & Depression, anxiety & Low & Prescreening \\
          &  &  &  & Encourage shared group activities \\
-         &  &  &  & Regular communication with friends/family \\
+         &  &  &  & Regular communication with friends and family \\
          &  &  &  & Education and awareness \\
          & Confined environment & Interpersonal conflict & Moderate & Prescreening \\
          &  &  &  & Encourage shared group activities \\
          & Alcohol & Injury whilst intoxicated & Moderate & Education \\
          &  &  &  & Two can rule \\
-         &  & Dependency/withdrawal & Low & Education \\
+         &  & Dependency, withdrawal & Low & Education \\
          &  &  &  & Prescreening \\
          &  &  &  & Encourage other recreational activities \\
          &  &  &  & Two can rule \\
@@ -117,7 +118,7 @@ As the largest British station on the continent, the summer population can excee
          &  &  &  & Appropriate clothing \\
          &  &  &  & Adequate nutrition \\
          &  &  &  & Rewarming bath available on station \\
-         &  & Frostbite/Frostnip & Moderate & Prescreening \\
+         &  & Frostbite, frostnip & Moderate & Prescreening \\
          &  &  &  & Education \\
          &  &  &  & Appropriate clothing \\
          &  &  &  & Adequate hydration \\
@@ -132,7 +133,7 @@ As the largest British station on the continent, the summer population can excee
          &  &  &  & Education \\
          &  &  &  & Dental training for MO \\
          & Sun & Photokeratitis & Moderate & Education \\
-         &  &  &  & Provision of Cat 4 wraparound sunglasses/goggles \\
+         &  &  &  & Provision of Cat 4 wraparound sunglasses \\
          &  & Sunburn & Moderate & Education \\
          &  &  &  & Limit exposed skin \\
          &  &  &  & Provision of sunblock \\
@@ -144,7 +145,7 @@ As the largest British station on the continent, the summer population can excee
          &  &  &  & Supplemental oxygen at bases \\
          & Low humidity & Dehydration & Moderate & Education \\
          &  &  &  & Encourage regular fluid intake \\
-         & Contaminated water & Poisoning/dehydration & Low & Predeployment campcraft training \\
+         & Contaminated water & Poisoning, dehydration & Low & Predeployment campcraft training \\
          &  &  &  & Use of Field Assistants \\
         \midrule
         Lab work & Hazardous chemicals & Exposure to harmful chemicals & Low & COSHH assessments to be completed \\
@@ -152,7 +153,7 @@ As the largest British station on the continent, the summer population can excee
          &  &  &  & BAS Lab induction training \\
          & Exposed flames & Burns & Moderate & BAS Lab induction training \\
          &  &  &  & Limit lone working where possible \\
-         & Pressure vessels & Burns/scalds & Low & BAS Lab induction training \\
+         & Pressure vessels & Burns, scalds & Low & BAS Lab induction training \\
          &  &  &  & Limit lone working where possible \\
         \midrule
         Overland travel & Collision & Trauma & Low & Predeployment training \\
@@ -160,7 +161,7 @@ As the largest British station on the continent, the summer population can excee
          & Getting lost & Various,  inc. trauma and cold injury & Moderate & Predeployment training \\
          &  &  &  & Use of Field Assistants \\
          &  &  &  & Provision of reserve fuel and emergency supplies \\
-         & Avalanche & Major trauma/asphyxiation & Moderate & Travel routes to be approved by BAS Ops \\
+         & Avalanche & Major trauma, asphyxiation & Moderate & Travel routes to be approved by BAS Ops \\
          &  &  &  & Use of Field Assistants \\
          &  &  &  & Predeployment training \\
          &  &  &  & Meterology advice \\
@@ -185,7 +186,7 @@ As the largest British station on the continent, the summer population can excee
          &  &  &  & Adequate manpower for task \\
          &  &  &  & Use of appropriate PPE \\
         \midrule
-        Boat work & Capsize/Man overboard & Drowning & Low & Predeployment training \\
+        Boat work & Capsize, man overboard & Drowning & Low & Predeployment training \\
          &  &  &  & Regular MOB drills \\
          &  &  &  & MAJAX plan and exercises \\
          &  &  &  & Use of appropriate PPE \\
@@ -195,7 +196,7 @@ As the largest British station on the continent, the summer population can excee
          & Manual handling & Crush,  back, and hand injuries & Moderate & Predeployment training \\
          &  &  &  & Adequate manpower for task \\
          &  &  &  & Use of appropriate PPE \\
-         & Engine failure/run aground & Various, inc hypothermia & Low & Boating ops to be approved by Boating officer \\
+         & Engine failure, run aground & Various, inc hypothermia & Low & Boating ops to be approved by Boating officer \\
          &  &  &  & Appropriate clothing \\
          &  &  &  & Use of appropriate PPE \\
          &  &  &  & Reserve boat to be kept ready on station \\
@@ -232,7 +233,7 @@ As the largest British station on the continent, the summer population can excee
         Outdoor recreation & Getting lost & Various,  inc trauma and cold injury & Moderate & Recreation restricted to approved areas \\
          &  &  &  & Predeployment training \\
          &  &  &  & Use of Field Assistants \\
-         & Avalanche & Major trauma/asphyxiation & Moderate & Recreation restricted to approved areas \\
+         & Avalanche & Major trauma, asphyxiation & Moderate & Recreation restricted to approved areas \\
          &  &  &  & Use of Field Assistants \\
          &  &  &  & Predeployment training \\
          &  &  &  & Meterology advice \\
@@ -242,7 +243,7 @@ As the largest British station on the continent, the summer population can excee
          &  &  &  & Predeployment training \\
          &  &  &  & MAJAX plan and exercises \\
         \bottomrule
-    \end{longtable}
+    \end{longtabu}
 
 \end{landscape}
 
