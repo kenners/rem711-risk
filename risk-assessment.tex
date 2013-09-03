@@ -9,7 +9,8 @@
 \usepackage[UKenglish]{isodate}
 \usepackage{graphicx}
 
-\usepackage[pdfauthor={Kenrick Turner}, pdftitle={A pre-deployment medical plan for Rothera Research Station, Antarctica}, pdfsubject={Antarctic medical risk assessment},pdfkeywords={antarctica, risk assessment, medical}]{hyperref}
+\usepackage[unicode]{hyperref}
+\hypersetup{pdfauthor={Kenrick Turner}, pdftitle={A pre-deployment medical plan for Rothera Research Station, Antarctica}, pdfsubject={Antarctic medical risk assessment},pdfkeywords={antarctica, risk assessment, medical}}
 
 % Need this to rotate table in appendix
 \usepackage{pdflscape}
@@ -58,17 +59,43 @@ Proper Planning and Preparation Prevents Poor Performance.
 \em British Army adage
 \end{quote}
 
-In October 2013, the British Antarctic Survey will begin its summer operations and resupply of Rothera Research Station, involving the transport of over a hundred personnel to Antarctica and a steady ramp up in scientific activities for the Austral summer. Personnel deploy to the continent for a variety of durations: from a mythical ``long-weekend in Rothera'' to an 18 month overwintering tour.
+In October 2013, the British Antarctic Survey (BAS) will begin its summer operations and resupply of Rothera Research Station, involving the transport of over a hundred personnel to Antarctica and a steady ramp up in scientific activities for the Austral summer. Personnel deploy to the continent for a variety of durations: from a mythical ``long-weekend in Rothera'' to an 18 month overwintering tour.
 
 The Antarctic environment is frequently hostile and presents many hazards alien to the UK. Moreover, the ability to manage these hazards is severely constrained due to the limited infrastructure and personnel available. These limitations may require unorthodox or unusual solutions to be employed when devising a pragmatic medical plan.
 
-Medical cover is provided by a single Medical Officer (MO), assisted by several Advanced First Aiders -- trained in part by the MO -- and all personnel have basic First Aid training prior to deployment. During the Austral summer, there is an overlap period of several months between incoming and outgoing MOs whereby two doctors may be available on site. Further medical support is rendered by a comprehensive telemedicine service by the British Antarctic Survey Medical Unit (BASMU), based in Derriford Hospital, Plymouth, UK. BASMU also trains MOs prior to deployment, which fosters a close working relationship between MOs and clinicians who will potentially be providing telemedicine support.
-
 This medical plan documents the risk assessment that has been undertaken to identify the range of risks presented by Antarctic operations. Whilst addressing general considerations, hazards identified as taking the greatest importance will be discussed comprehensively, including strategies for avoidance and control of the encountered risks, and a response plan in the event of harm occurring.
 
-\section{Situational Description}
+\section{Situation Briefing}
 
-As the largest British station on the continent, the summer population can exceed 120 people and the station serves as a busy airbase for
+\subsection{Overview}
+
+Rothera research station was established in 1975 and is located at 67°34'S, 68°08'W on Adelaide Island on the Antarctic peninsula. It lies 1,900km south of the Falkland Isles and 1,500km south-east of Cape Horn. The terrain surrounding Rothera is mountainous with peaks in exceeding 2,500m and is also heavily glaciated. Temperatures range from around 0 -- 5ºC during summer to between -5ºC and -20ºC in winter.
+
+The station comprises of several low buildings, including accommodation facilities, workshops, laboratories, and a control tower. Air operations are facilitated by a hangar, fuel depot, and 900m long runway and apron in close proximity to accommodation buildings. As a coastal station, Rothera also has a wharf permitting resupply by ship.
+
+Rothera is resupplied by both sea and air. Cargo is predominantly transported by sea on one of two calls per season by BAS-operated vessels, whilst personnel movements usually occur by air on Dash-7 or Twin Otter aircraft.
+
+As the largest research station operated by BAS, the summer population approaches 130 staff, whilst for the 2013-14 season approximately 20 people are expected to overwinter. Scientific research consists mainly of marine biology, geology, glaciology and meteorology, with the majority of the work conducted during the Austral summer.
+
+In addition to conducting research on and around station, Rothera also serves as a logistics hub for UK science parties and partner nations operating in the deep field, with personnel transiting Rothera either by air or by overland travel on snowmobile or snowcat. Deep field parties are geographically and temporally remote -- frequently hundreds kilometres and several hours flight time away.
+
+In addition to local and deep field operations, two forward operating bases fall under Rothera's medical cover. Fossil Bluff (71°20'S, 68°17'W) and Sky-Blu (74°51'S, 71°34'W) are two logistics facilities around 90 minutes and 3 hours flight time from Rothera respectively. As summer-only stations, their role is to support deep field operations and have only limited personnel on site living in pyramid tents. Communication with Rothera is conducted via radio, and there are comprehensive medical kits at both sites.
+
+\subsection{Primary Medical Cover}
+
+Medical cover on station is provided by a single Medical Officer (MO), assisted by several Advanced First Aiders -- trained in part by the MO -- and all personnel have basic First Aid training prior to deployment. During the Austral summer, there is an overlap period of several months between incoming and outgoing MOs whereby two doctors may be available on site.
+
+Further medical support is rendered by a comprehensive telemedicine service by the British Antarctic Survey Medical Unit (BASMU), based in Derriford Hospital, Plymouth, UK. BASMU also trains MOs prior to deployment, which fosters a close working relationship between MOs and clinicians who will potentially be providing telemedicine support.
+
+The medical bay at Rothera is physically small but well-provisioned, including plain film radiology, full anaesthetic capability, and \emph{in extremis}, general surgical capability.
+
+\subsection{Secondary Medical Cover}
+
+The closest secondary medical care facility is Clinica Magallanes\cite{Anonymous:TgM8hVWD} in Punta Arenas, Chile, and is 1,600km and 4.5 hours flight time away by Dash-7 aircraft. It is a private tertiary referral centre for the region, providing all major medical and surgical specialities, including neurosurgery. It has both CT and MRI imaging available onsite.
+
+An alternative is Kind Edward VII Memorial Hospital in Stanley, Falkland Islands. It offers 17 acute beds, with an emergency department, dental services, a single theatre, and 2 ITU beds.\cite{Anonymous:qFBtPcmx} Whilst it can provide plain film radiology it has no CT scanner. It is a proven evacuation route, having previously received medivacs from Rothera, but it is further away than Punta (1,900km), incurring an additional hour's flight time (5.5 hours). Moreover, Punta offers a more comprehensive range of facilities so should be the preferred evacuation route.
+
+Medical evacuation normally takes place by air, using Dash-7 aircraft which have a pressurised cabin. However, aircraft are not normally stationed at Rothera during winter, and BASMU maintains a policy of not undertaking evacuations during this period due to the risks presented by inclement weather. An alternative method is by ship, and casualties have previously been evacuated under exceptional circumstances during winter via this route. It should be stressed that evacuation may be delayed for a considerable period in both summer and winter owing to poor conditions.
 
 \section{Methodology}
 
@@ -89,8 +116,8 @@ As the largest British station on the continent, the summer population can excee
 \bibliographystyle{naturemag}
 \bibliography{risk-assessment}
 
+\appendix
 \begin{landscape}
-    \appendix
     \section{Risk Assessment for Rothera Research Station}
     \begin{longtabu} to\linewidth{X[l]X[l]X[l]X[l]X[2,l]}
         \toprule
@@ -244,7 +271,6 @@ As the largest British station on the continent, the summer population can excee
          &  &  &  & MAJAX plan and exercises \\
         \bottomrule
     \end{longtabu}
-
 \end{landscape}
 
 \end{document}
