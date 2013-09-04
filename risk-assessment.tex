@@ -14,6 +14,8 @@
 
 % Need this to rotate table in appendix
 \usepackage{pdflscape}
+
+% Pretty table stuff
 \usepackage{tabu}
 \usepackage{longtable}
 \usepackage{booktabs}
@@ -34,21 +36,6 @@
 
 \maketitle
 
-% The student should address their own impending deployment to a remote environment and draw up a plan to provide optimal healthcare to the at risk population.  This does not need to address every hazard posed by the environment (although the range of hazards faced should be briefly described) but should cover at least three separate areas.
-
-% In order to achieve this you will need to:
-
-%   Describe the main areas of hazard to the expedition resulting from the environment, expedition activities or local populace. Consider also the specific interpersonal challenges of a lone practitioner caring for a group of which they are a part.  Choose areas that will be addressed with a rationale as to why they form the focus of the work.
-
-%   Identify levels of risk associated with each hazard and describe techniques described in the literature to mitigate them.
-
-%   Demonstrate an understanding of the harms likely to result from these hazards, and give an evidence-based strategy for managing them in the remote environment.
-
-%   Identify the limitations of “standard” management of these conditions imposed by the constraints of the expedition (Transport, access to additional healthcare resources, portability, supply, cost etc).  Synthesize plans to provide optimal management within these limits.
-
-%   Draw these plans together to provide kit lists, training objectives, procedures, strategies etc that demonstrate the optimal management of these hazards within your chosen environment.
-
-%   Conclude with a summary of the key areas you need to address to keep your expedition safe from these hazards, highlighting how this may be different from conventional NHS practice.
 \pagebreak
 
 \tableofcontents
@@ -122,7 +109,7 @@ The Health and Safety Executive (HSE) describes five steps\cite{HSE:2012tp} in t
     \item Review the assessment and update as necessary
 \end{enumerate}
 
-Using this model, a brief qualitative risk assessment for Rothera station is undertaken in Appendix A.
+Using this model, a brief qualitative risk assessment for Rothera station is undertaken in Appendix~\ref{sec:risk}.
 
 When a risk is identified, four techniques may be employed to manage it:
 
@@ -156,19 +143,151 @@ Tightly coupled to this issue is that the majority of the MO's work occurs in pr
 
 \section{Specific Hazards}
 
-\subsection{Hypothermia}
+\subsection{Accidental hypothermia}
 
 \subsubsection{Rationale}
 
+Accidental hypothermia is a potentially life-threatening involuntary decrease of ≥2ºC in normal core body temperature. Whilst its incidence is reportedly low in Antarctica\cite{BritishAntarcticSurveyMedicalUnit:2013vj} (probably due to robust education and provision of appropriate clothing), mild cases may go unrecognised.\cite{Brown:2012ja} Further, a brief risk assessment (Appendix~\ref{sec:risk}) demonstrates that the cold environment is a hazard common to many regular activities undertaken at Rothera, with hypothermia being one of the major associated harms.
+
 \subsubsection{Risk assessment}
+
+The principle hazard for hypothermia is cold exposure. Hypothermia occurs when heat production is overcome by the stress of excessive cold. Consequently, there are many factors that increase the risk of hypothermia:
+
+\begin{itemize}
+    \item Environment
+    \begin{itemize}
+        \item Cold temperature
+        \item Wind
+        \item Wet clothing
+        \item Altitude
+    \end{itemize}
+    \item Physiology
+    \begin{itemize}
+        \item Extremes of age
+        \item Poor nutrition
+        \item Dehydration
+        \item Intoxication
+        \item Medications
+        \item Immobility
+        \item Sleep deprivation
+    \end{itemize}
+    \item Comorbidities
+        \begin{itemize}
+            \item Trauma
+            \item Hypothyroidism
+        \end{itemize}
+\end{itemize}
+
+Many activities expose personnel to the cold at Rothera including field work, air travel, boat work, diving, and recreational activities such as skiing. Consequently, all personnel will be exposed to some risk, but the exact degree of risk will vary considerably. Particular high risk groups include divers and boatmen, deep field parties, aircrew and Field Assistants.
 
 \subsubsection{Risk management}
 
+The most effective strategy is to avoid exposing personnel to the cold. Prescreening of personnel prior to deployment will identify individuals at high risk who may not be suitable for Antarctic service. Other avoidance strategies include provision of adequate shelter/accommodation, provision of well-fitting appropriate clothing and personal protective equipment (PPE), adequate supply of hydration and nutrition, and other equipment specific to the activity (e.g. drysuits or warm-water suits for divers, and snowcats to be preferred over snowmobiles for overland travel in bad conditions).
+
+It is unrealistic to expect personnel to avoid becoming cold at some point whilst deployed in Antarctica, hence mitigation strategies should also be employed to prevent coldness progressing to hypothermia. Hot drinks should be readily available, both on station and in the field, as should calorific snacks. Field parties should be equipped with means of establishing shelter quickly such as a bothy bag or pyramid tent. First aid kits should contain heat-reflective blankets and survival bags to facilitate rewarming. Boating and diving operations should plan to take spare warm clothing in case of becoming wet.
+
+Coupled to both of these elements is education and training, as many of the steps outlined above rely on strict discipline and behaviour modification. Personnel are extensively briefed prior to deployment on fieldcraft to prevent hypothermia, how to recognise it in themselves and others, and how to initiate treatment.
+
 \subsubsection{Management}
+
+The diagnosis of hypothermia may be made either clinically or by measurement of core body temperature with a low-reading thermometer. The Swiss staging system for hypothermia provides the most pragmatic system for diagnosis and may also guide management (Table~\ref{tab:swiss}).\cite{Durrer:2003it} Severe hypothermia (HT IV) is notoriously difficult to distinguish from clinical death, giving rise to the adage ``nobody is dead until they are warm and dead.'' However, in the context of a non-permissive environment where other personnel may be at risk from exposure, a useful discriminator is an incompressible chest wall, indicating that the body is frozen solid and resuscitative efforts are futile.\cite{Brown:2012ja}
+
+A variety of techniques are available for rewarming hypothermic patients:\cite{Brown:2012ja}
+
+\begin{itemize}
+    \item Passive rewarming
+    \begin{itemize}
+        \item Warm environment \& clothes
+        \item Warm drinks
+        \item Active movement
+    \end{itemize}
+    \item Active external rewarming
+    \begin{itemize}
+        \item Heat packs (charcoal/electric)
+        \item Forced-air blankets (e.g. Barehugger)
+    \end{itemize}
+    \item Minimally invasive rewarming
+    \begin{itemize}
+        \item Warmed (40ºC) intravenous fluids
+    \end{itemize}
+    \item Invasive rewarming
+    \begin{itemize}
+        \item Without cardiac support
+        \begin{itemize}
+            \item Peritoneal dialysis
+            \item Haemodialysis
+            \item Thoracic lavage
+        \end{itemize}
+        \item With cardiac support
+        \begin{itemize}
+            \item Extracorporeal membrane oxygenation (ECMO)
+            \item Cardiopulmonary bypass (CPB)
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\begin{table}
+    \begin{tabu} to\linewidth{X[l] X[2,l] X[c] X[2,l]}
+        \toprule
+        \rowfont\bfseries Stage & Symptoms & Core Temp. (ºC) & Treatment \\
+        \midrule
+        HT I & Conscious, shivering & 32--35 & Warm environment and clothing, warm sweet drinks, and active movement \\
+        HT II & Impaired consciousness, no shivering & 28--32 & Cardiac monitoring, horizontal position \& immobilisation, active external rewarming (heat packs and blankets) \& minimally invasive rewarming (warm IV fluids) \\
+        HT III & Unconscious, no shivering, vital signs present & 24--28 & As for HT II + airway management, consider rewarming with ECMO or cardio-pulmonary bypass \\
+        HT IV & No vital signs, pliable chest wall & <24 & HT II \& III management + ALS, rewarming with ECMO or cardio-pulmonary bypass \\
+        \bottomrule
+    \end{tabu}
+    \caption{The Swiss staging system for hypothermia\cite{Durrer:2003it}} \label{tab:swiss}
+\end{table}
+
+As shown in Table~\ref{tab:swiss}, treatment of hypothermia is guided by the Swiss stage. Nevertheless, management may be broadly divided into prehospital and hospital stages.
+
+In the field, priorities should focus on provision of basic or advanced life support (BLS/ALS), passive and active rewarming, careful handling due to potential cardiac instability, and expedited transfer to the nearest medical facility.\cite{Brown:2012ja} CPR should only be commenced after careful checking for signs of life for at least one minute, and with the understanding that a prolonged resuscitation attempt may be required, potentially lasting hours.\cite{Soar:2010kd} Rescuers should be mindful of this requirement when undertaking such an attempt in a non- or semi-permissive environment. Rewarming in the prehospital setting should focus on heat packs and forced-air blankets, as other methods are either impractical or do not confer substantial heat transfer.\cite{Lundgren:2011ce,Hultzer:2005vn}
+
+In the hospital setting, a hypothermic patient who is haemodynamically stable and normal should undergo active external and minimally invasive rewarming, as described above. This should produce a rise in core body temperature of \~2ºC/hr and be sufficient treatment for stage HT I and II hypothermia.\cite{Auerbach:2012tq,vanderPloeg:2010im} Patients presenting in stage HT III or IV hypothermia will often be haemodynamically compromised and may require cardiac support in the form of ECMO or CPB in addition to the rewarming techniques described for stages HT I and II.\cite{Brown:2012ja}
+
+Hypothermic patients often have large intravenous fluid requirements due to cold diuresis and vasodilation associated with rewarming.\cite{Soar:2010kd} Balanced salt solutions should be used to avoid compounding a pre-existing metabolic acidosis.\cite{PowellTuck:2011us}
 
 \subsubsection{Limitations of standard management}
 
+Treatment of hypothermia in the field is limited to passive and active external rewarming, as invasive rewarming is clearly inappropriate and minimally invasive rewarming requires a prodigious amount of IV fluids. Furthermore, prehospital management may be complicated by difficulties in extricating and transporting a hypothermic patient, which in profound hypothermia (HT III and IV) may trigger cardiac arrest. On station, in addition to measures available in the field, minimally invasive rewarming may also be commenced. There is no capability to provide cardiac support, and over invasive rewarming techniques would be \emph{ad hoc} at best.
+
+Therefore, hypothermic cardiac arrest in Antarctica is probably unsurvivable, owing to difficulties in transferring the patient to station, the lack of expertise and provision of ECMO or CPB, and the inability to provide Level 3 care. Moreover, attempts at resuscitation in the field are likely to place rescuers at risk themselves, despite their natural inclination to try and render first aid.
+
 \subsubsection{Control Measures and Plan}
+
+Given the limitations discussed above, the following control measures should be implemented.
+
+\begin{enumerate}
+    \item Predeployment screening \\
+    Infirm individuals who are malnourished (e.g. annorexia nervosa) or who have other medical comorbidities increasing their risk of hypothermia should not be cleared for Antarctic service.
+    \item Predeployment briefing \\
+    The risk of hypothermia should be communicated to personnel and they should be briefed on prevention, recognition, and treatment of hypothermia. The effective ceiling of care should also be made clear.
+    \item Hypothermic risk assessment for activities \\
+    Comprehensive control measures for specific activities (e.g. diving, air travel etc.) is beyond the scope of this plan. Responsible individuals for these activities should conduct a risk assessment incorporating appropriate measures (e.g. Field Assistants should ensure appropriate shelter is available when planning field trips).
+    \item Equipment for field medical kits \\
+    Each field medical kit should contain the following items:
+    \begin{itemize}
+        \item 1 x  Blizzard Rescue Blanket
+        \item 1 x North American Rescue Hypothermia Prevention and Management Kit
+        \item 2 x TechTrade Ready-Heat 6 Panel Blanket
+        \item 10 x 3M Tempadots Disposable Thermometers
+        \item 1 x LESS Thermal Hood
+        \item 1 x Lifesystems Bothy (4-6 man)
+    \end{itemize}
+    \item Equipment for Rothera station \\
+    The medical bay at Rothera should be provisioned with the following items:
+    \begin{itemize}
+        \item 1 x  low-reading rectal thermometer
+        \item 2 x North American Rescue Hypothermia Prevention and Management Kit
+        \item 4 x TechTrade Ready-Heat 6 Panel Blanket
+        \item 1 x LESS Thermal Hood
+        \item 1 x 3M Bair Hugger 775 Temperature Management Unit
+        \item 10 x 3M Bair Hugger 300 Full Body Blankets
+        \item 1 x 3M Ranger Fluid Warming Unit
+        \item 10 x 3M Ranger High Flow Disposable Fluid Warming Set (Model 24350)
+    \end{itemize}
+\end{enumerate}
 
 \subsection{Carbon monoxide poisoning}
 
@@ -200,163 +319,7 @@ Tightly coupled to this issue is that the majority of the MO's work occurs in pr
 
 \section{Conclusion}
 
-\appendix
-\begin{landscape}
-    \section{Risk Assessment for Rothera Research Station}
-    % TODO: Update risk to be composite of severity and probability
-    \begin{longtabu} to\linewidth{X[l]X[l]X[l]X[l]X[2,l]}
-        \toprule
-        \rowfont\bfseries Activity & Hazard & Harm & Risk & Control Measures \\
-        \midrule
-        \endhead
-        Antarctic environment & Isolation & Depression, anxiety & Low & Prescreening \\
-         &  &  &  & Encourage shared group activities \\
-         &  &  &  & Regular communication with friends and family \\
-         &  &  &  & Education and awareness \\
-         & Confined environment & Interpersonal conflict & Moderate & Prescreening \\
-         &  &  &  & Encourage shared group activities \\
-         & Alcohol & Injury whilst intoxicated & Moderate & Education \\
-         &  &  &  & Two can rule \\
-         &  & Dependency, withdrawal & Low & Education \\
-         &  &  &  & Prescreening \\
-         &  &  &  & Encourage other recreational activities \\
-         &  &  &  & Two can rule \\
-         & Darkness & Seasonal affective disorder & Moderate & Prescreening \\
-         &  &  &  & Encourage strict sleep hygeine \\
-         &  &  &  & Light boxes \\
-         &  &  &  & Vitamin D supplementation \\
-        \midrule
-        Field work & Cold & Hypothermia & Low & Education \\
-         &  &  &  & Appropriate clothing \\
-         &  &  &  & Adequate nutrition \\
-         &  &  &  & Rewarming bath available on station \\
-         &  & Frostbite, frostnip & Moderate & Prescreening \\
-         &  &  &  & Education \\
-         &  &  &  & Appropriate clothing \\
-         &  &  &  & Adequate hydration \\
-         &  &  &  & Rewarming bath available on station \\
-         &  & Non-freezing cold injury & Low & Education \\
-         &  &  &  & Appropriate clothing \\
-         &  &  &  & Adequate hydration \\
-         &  & Dental sensitivity & Moderate & Prescreening \\
-         &  &  &  & Provide high fluoride toothpaste \\
-         &  &  &  & Duraphat varnish \\
-         &  & Cracked tooth & Low & Prescreening \\
-         &  &  &  & Education \\
-         &  &  &  & Dental training for MO \\
-         & Sun & Photokeratitis & Moderate & Education \\
-         &  &  &  & Provision of Cat 4 wraparound sunglasses \\
-         &  & Sunburn & Moderate & Education \\
-         &  &  &  & Limit exposed skin \\
-         &  &  &  & Provision of sunblock \\
-         & Fire & Burns & Low & Education \\
-         &  &  &  & Predeployment campcraft training \\
-         & Cooking in tents & CO poisoning & Moderate & Education \\
-         &  &  &  & Predeployment campcraft training \\
-         &  &  &  & CO detectors in tents \\
-         &  &  &  & Supplemental oxygen at bases \\
-         & Low humidity & Dehydration & Moderate & Education \\
-         &  &  &  & Encourage regular fluid intake \\
-         & Contaminated water & Poisoning, dehydration & Low & Predeployment campcraft training \\
-         &  &  &  & Use of Field Assistants \\
-        \midrule
-        Lab work & Hazardous chemicals & Exposure to harmful chemicals & Low & COSHH assessments to be completed \\
-         &  &  &  & Use of appropriate PPE \\
-         &  &  &  & BAS Lab induction training \\
-         & Exposed flames & Burns & Moderate & BAS Lab induction training \\
-         &  &  &  & Limit lone working where possible \\
-         & Pressure vessels & Burns, scalds & Low & BAS Lab induction training \\
-         &  &  &  & Limit lone working where possible \\
-        \midrule
-        Overland travel & Collision & Trauma & Low & Predeployment training \\
-         &  &  &  & MAJAX plan and exercises \\
-         & Getting lost & Various,  inc. trauma and cold injury & Moderate & Predeployment training \\
-         &  &  &  & Use of Field Assistants \\
-         &  &  &  & Provision of reserve fuel and emergency supplies \\
-         & Avalanche & Major trauma, asphyxiation & Moderate & Travel routes to be approved by BAS Ops \\
-         &  &  &  & Use of Field Assistants \\
-         &  &  &  & Predeployment training \\
-         &  &  &  & Meterology advice \\
-         &  &  &  & MAJAX plan and exercises \\
-         & Crevasse fall & Major trauma, cold injury & Moderate & Travel routes to be approved by BAS Ops \\
-         &  &  &  & Use of Field Assistants \\
-         &  &  &  & Predeployment training \\
-         &  &  &  & MAJAX plan and exercises \\
-        \midrule
-        Aircraft travel & Noise & Hearing damage & Moderate & Use of appropriate PPE \\
-         &  &  &  & Limit access to apron and runway during air ops \\
-         & Altitude & Altitude illness (AMS, HACE, HAPE) & Low & Use minimum altitude circumstances permit \\
-         &  &  &  & Prescreening \\
-         &  &  &  & Prophylactic acetazolamide for susceptible individuals \\
-         &  &  &  & Stagger direct flights to plateau \\
-         & Propellers & Major trauma & Low & Limit access to apron and runway during air ops \\
-         &  &  &  & Education \\
-         &  &  &  & MAJAX plan and exercises \\
-         & Crash & Major trauma & Low & Limit access to apron and runway during air ops \\
-         &  &  &  & MAJAX plan and exercises \\
-         & Manual handling & Crush, back, and hand injuries & Moderate & Predeployment training \\
-         &  &  &  & Adequate manpower for task \\
-         &  &  &  & Use of appropriate PPE \\
-        \midrule
-        Boat work & Capsize, man overboard & Drowning & Low & Predeployment training \\
-         &  &  &  & Regular MOB drills \\
-         &  &  &  & MAJAX plan and exercises \\
-         &  &  &  & Use of appropriate PPE \\
-         &  & Hypothermia & Low & Use of appropriate PPE \\
-         &  &  &  & Regular MOB drills \\
-         &  &  &  & Predeployment training \\
-         & Manual handling & Crush,  back, and hand injuries & Moderate & Predeployment training \\
-         &  &  &  & Adequate manpower for task \\
-         &  &  &  & Use of appropriate PPE \\
-         & Engine failure, run aground & Various, inc hypothermia & Low & Boating ops to be approved by Boating officer \\
-         &  &  &  & Appropriate clothing \\
-         &  &  &  & Use of appropriate PPE \\
-         &  &  &  & Reserve boat to be kept ready on station \\
-        \midrule
-        Diving & Cold water & Drowning & Low & Diving restricted to approved divers \\
-         &  &  &  & Use of appropriate PPE \\
-         &  &  &  & All diving to be approved by Diving officer \\
-         &  &  &  & Absolute depth limit of 30m \\
-         &  &  &  & No decompression diving \\
-         &  &  &  & No solo diving \\
-         &  & Hypothermia & Moderate & Use of appropriate PPE \\
-         &  &  &  & No solo diving \\
-         &  &  &  & Rewarming bath available on station \\
-         &  & Decompression illness & Low & Diving restricted to approved divers \\
-         &  &  &  & No nitrox or heliox dives \\
-         &  &  &  & All diving to be approved by Diving officer \\
-         &  &  &  & Absolute depth limit of 30m \\
-         &  &  &  & No decompression diving \\
-         &  &  &  & No solo diving \\
-         &  &  &  & Decompression chamber on station \\
-         &  & Ear infection & High & Education \\
-         &  &  &  & Prompt treatment \\
-         &  & Barotrauma & Moderate & Diving restricted to approved divers \\
-         &  &  &  & Use of lines for descent and ascent \\
-         &  &  &  & No solo diving \\
-         & Fauna & Animal attack & Moderate & Diving restricted to approved divers \\
-         &  &  &  & No solo diving \\
-         &  &  &  & All diving to be approved by Diving officer \\
-         &  &  &  & Lookouts to be posted for seals/orcas \\
-         &  &  &  & No diving within 4hrs of sighting of seal/orca \\
-         &  &  &  & Immediate termination of dive if seal/orca spotted \\
-         &  &  &  & No decompression diving \\
-        \midrule
-        Outdoor recreation & Getting lost & Various,  inc trauma and cold injury & Moderate & Recreation restricted to approved areas \\
-         &  &  &  & Predeployment training \\
-         &  &  &  & Use of Field Assistants \\
-         & Avalanche & Major trauma, asphyxiation & Moderate & Recreation restricted to approved areas \\
-         &  &  &  & Use of Field Assistants \\
-         &  &  &  & Predeployment training \\
-         &  &  &  & Meterology advice \\
-         &  &  &  & MAJAX plan and exercises \\
-         & Crevasse fall & Major trauma, cold injury & Moderate & Recreation restricted to approved areas \\
-         &  &  &  & Use of Field Assistants \\
-         &  &  &  & Predeployment training \\
-         &  &  &  & MAJAX plan and exercises \\
-        \bottomrule
-    \end{longtabu}
-\end{landscape}
+\input{appendix.tex}
 
 \bibliographystyle{vancouver}
 \bibliography{risk-assessment}
