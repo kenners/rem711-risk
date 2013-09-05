@@ -26,6 +26,11 @@
 \setmonofont[Scale=0.9]{Source Code Pro}
 \usepackage{microtype}
 
+% Fancy bolded numbers for enumerate environment
+\newenvironment{boldenumerate}
+    {\begin{enumerate}\renewcommand\labelenumi{\textbf\theenumi}}
+    {\end{enumerate}}
+
 \title{A pre-deployment medical plan for Rothera Research Station, Antarctica}
 \author{REM711: Pre-expedition Medical Plan}
 \date{Student: 10463823 \\ Word Count: }
@@ -120,7 +125,7 @@ When a risk is identified, four techniques may be employed to manage it:
     \item[Acceptance] is the strategy of actively deciding that one will accept the harm of a risk should it occur and planning appropriately to manage the consequences. Clearly the potential gains should heavily outweigh the harm, so acceptance is best reserved for when the severity of harm is significantly smaller than the cost of avoiding, mitigating, or transferring the risk.
 \end{description}
 
-Whilst a fully comprehensive risk assessment for Rothera is beyond the scope of this medical plan, three hazards have been identified that merit further discussion below.
+Whilst a fully comprehensive risk assessment for Rothera is beyond the scope of this medical plan, three risks have been identified that merit further discussion below.
 
 \section{Challenges as the Lone Practitioner}
 
@@ -141,7 +146,7 @@ Confidentiality may also present a challenge, as the MO has a duty of care to no
 
 Tightly coupled to this issue is that the majority of the MO's work occurs in private, shielded from the rest of the station. Not only may this give rise to the impression of idleness by the MO, this situation also means the MO does not routinely have colleagues to vent or casually discuss confidences with -- often a key coping mechanism. Encouraging regular telephone contact with BASMU and other MOs on different stations is one mitigation strategy.
 
-\section{Specific Hazards}
+\section{Specific Risks}
 
 \subsection{Accidental hypothermia}
 
@@ -258,9 +263,9 @@ Therefore, hypothermic cardiac arrest in Antarctica is probably unsurvivable, ow
 
 \subsubsection{Control measures and plan}
 
-Given the limitations discussed above, the following control measures should be implemented.
+Given the limitations discussed above, the following control measures should be implemented:
 
-\begin{enumerate}
+\begin{boldenumerate}
     \item \textbf{Predeployment screening} \\
     Infirm individuals who are malnourished (e.g. annorexia nervosa) or who have other medical comorbidities increasing their risk of hypothermia should not be cleared for Antarctic service.
     \item \textbf{Predeployment briefing} \\
@@ -272,8 +277,8 @@ Given the limitations discussed above, the following control measures should be 
     \begin{itemize}
         \item 1 x  Blizzard Rescue Blanket
         \item 1 x North American Rescue Hypothermia Prevention and Management Kit
-        \item 2 x TechTrade Ready-Heat 6 Panel Blanket
-        \item 10 x 3M Tempadots Disposable Thermometers
+        \item 1 x TechTrade Ready-Heat 6 Panel Blanket
+        \item 5 x 3M Tempadots Disposable Thermometers
         \item 1 x LESS Thermal Hood
         \item 1 x Lifesystems Bothy (4-6 man)
     \end{itemize}
@@ -282,18 +287,18 @@ Given the limitations discussed above, the following control measures should be 
     \begin{itemize}
         \item 1 x  low-reading rectal thermometer
         \item 1 x 3M Bair Hugger 775 Temperature Management Unit
-        \item 10 x 3M Bair Hugger 300 Full Body Blankets
+        \item 5 x 3M Bair Hugger 300 Full Body Blankets
         \item 1 x 3M Ranger Fluid Warming Unit
-        \item 10 x 3M Ranger High Flow Disposable Fluid Warming Set (Model 24350)
+        \item 10 x 3M Ranger High Flow Disposable Fluid Warming Sets (Model 24350)
     \end{itemize}
     For prevention or ongoing treatment of hypothermia during medivac, Rothera should also be provisioned with:
     \begin{itemize}
         \item 2 x North American Rescue Hypothermia Prevention and Management Kit
         \item 4 x TechTrade Ready-Heat 6 Panel Blanket
         \item 2 x LESS Thermal Hood
-        \item 100 x 3M Tempadots Disposable Thermometers
+        \item 20 x 3M Tempadots Disposable Thermometers
     \end{itemize}
-\end{enumerate}
+\end{boldenumerate}
 
 \subsection{Photokeratitis}
 
@@ -329,7 +334,7 @@ Photokeratitis is self-limiting, with the corneal epithelium normally regenerati
 
 The diagnosis should be confirmed through history and clinical examination. Important features are foreign body sensation, photophobia, bilateral involvement, and usual antecedent UV exposure due to absence of eye protection. Visual acuity should not be significantly impaired. Inspection usually demonstrates generalised chemosis with no discharge, and the cornea may appear hazy with a miotic pupil. The remainder of the examination should be unremarkable.\cite{Auerbach:2012tq}
 
-Treatment should consist of the following measures:
+Treatment should consist of the following measures:\cite{Auerbach:2012tq}
 
 \begin{itemize}
     \item Analgesia
@@ -340,7 +345,7 @@ Treatment should consist of the following measures:
     \end{itemize}
     \item Reduce photophobia
     \begin{itemize}
-        \item Cycloplegic drops (e.g. 1\% Cyclopentolate)
+        \item Cycloplegic drops (e.g. Cyclopentalate)
     \end{itemize}
     \item Prevent bacterial superinfection
     \begin{itemize}
@@ -348,11 +353,25 @@ Treatment should consist of the following measures:
     \end{itemize}
 \end{itemize}
 
-Topical anaesthetic drops should be used with caution, and only to facilitate initial examination of the eye as a temporising measure until analgesia through other methods is achieved. Prolonged use of anaesthetic drops is contraindicated.\cite{Patel:2013ki}
+Topical anaesthetic drops should be used with caution, and only to facilitate initial examination of the eye as a temporising measure until analgesia through other methods is achieved. Prolonged use of anaesthetic drops is contraindicated as it may lead to complications such as corneal ulceration.\cite{Patel:2013ki}
 
 \subsubsection{Limitations of standard management}
 
+All of the treatments described above and diagnostic equipment including an ophthalmoscope and slit lamp are available at Rothera, hence photokeratitis may be managed according to standard techniques when on station.\cite{Marquis:2013vg}
+
+However, photokeratitis often occurs in the deep field, especially after loss or damage to protective eyewear, where the MO may not be on hand to offer a diagnosis. Furthermore, field medical kits only contain chloramphenicol eye ointment and simple analgesia, and are not stocked with other ophthalmic supplies.\cite{Marquis:2013vg}
+
+In the event of loss or damage to sunglasses in the field, eye protection may be improvised by taking a strip of fabric, fashioning it into a blindfold and cutting two slits for the eyes.\cite{Wiseman:2003wx} Deep field parties should take a spare pair of sunglasses as a contingency plan. Similarly, eye patching may be improvised, but symptomatic relief must be balanced against the consequences of impaired vision when in the field.
+
 \subsubsection{Control measures and plan}
+
+The following control measures should be undertaken:
+
+\begin{boldenumerate}
+    \item \textbf{Predeployment briefing} \\
+    The risk of photokeratitis should be communicated to personnel and they should be briefed on its prevention, recognition, and treatment. The importance of protective eyewear should be stressed.
+\end{boldenumerate}
+
 
 \subsection{Carbon monoxide poisoning}
 
